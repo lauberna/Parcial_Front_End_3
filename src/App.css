@@ -40,3 +40,44 @@
 .read-the-docs {
   color: #888;
 }
+
+select{
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 13px;
+  background-color: #fff;
+  color: black;
+}
+
+input{
+  border: .5px solid rgba(255, 255, 255, 0.513);
+  border-radius: 15px;
+  text-align: center;
+  font-size: 13px;
+  background-color: #fff;
+  color: black;
+}
+
+label{
+  font-size: 17px;
+}
+
+form{
+  color: black;
+  width: 400px;
+  background-color: rgb(217, 255, 0);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px;
+}
+
+.card{
+  color: black;
+  background-color: rgb(217, 255, 0);
+  border-radius: 20px;
+  margin-top: 50px;
+}
