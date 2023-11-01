@@ -24,6 +24,8 @@ function App() {
       setMostrarErr(true)
     }
   };
+
+  const selectData = ["Rock", "Techno", "Electronica", "Reggaeton", "Pop", "Otros"]
   return (
     <div className="App">
       <form>
@@ -35,11 +37,7 @@ function App() {
         <label htmlFor="genero">Que genero de musica escuchas?: </label>
         <select onBlur={(e)=> setDatos({...datos, genero: e.target.value})} id="genero">
           <option value="" disabled selected>Selecciona un género</option>
-          <option value="rock">Rock</option>
-          <option value="pop">Pop</option>
-          <option value="electronica">Electronica</option>
-          <option value="techno">Techno</option>
-          <option value="reggaeton">reggaeton</option>
+          {selectData.map((p, key) => <option key={key} value={p}>{p}</option>)}
         </select>
         <label htmlFor="fav">Cual es tu cancion favorita?: </label>
         <input placeholder="ej. Alone" onBlur={(e)=> setDatos({...datos, fav: e.target.value.trim()})} type="text" id="fav"></input>
